@@ -12,7 +12,7 @@ class Test_Mars_Rover:
         self.default_south_facing_mars_rover = Mars_Rover(self.default_position, self.default_south_direction)
 
     def test_01_mars_rover_starts_where_it_should(self):
-        assert self.default_north_facing_mars_rover.position == self.default_position
+        assert self.default_north_facing_mars_rover.position == self.default_position, 'mars rover not in correct position!'
         assert self.default_north_facing_mars_rover.direction == self.default_north_direction
 
     def test_02_mars_rover_moves_forward(self):
